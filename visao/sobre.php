@@ -78,6 +78,8 @@
               <p>CSS/Bootstrap</p>
               <p>PHP</p>
               <p>MySQsL</p>
+              <p>XAMPP</p>
+              <p>VSCode</p>
             </div>
             </div>
             
@@ -85,7 +87,6 @@
     </section>
       <footer>
         <div>
-
           <div class="col-auto">
               <p>© Coryright 2021</p>
           </div>
