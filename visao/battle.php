@@ -55,7 +55,7 @@
       <div class="container">
         <div class="row">
             <div class="col-md-12">
-              <h1>Principais notícias</h1>
+              <h1>Battle Royale</h1>
             </div>
             <div class="col-sm-4" style="margin-bottom: 10px;">
               <div class="card" style="width: 20rem; height: 30rem;">

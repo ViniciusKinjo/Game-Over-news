@@ -66,7 +66,6 @@
               <h1>Alunos</h1>
             </div>
             <div id="sobreTexto">
-              <p>Paulo Venones da Silva RA: 21468254</p>
               <p>Rafael Oliveira de Araújo RA: 21452978</p>
               <p>Thiago Diniz Cabral RA: 21442918</p>
               <p>Vinicius Hidenori Kinjo RA: 21445884</p>
@@ -77,7 +76,6 @@
             <div id="sobreTexto">
               <p>HTML 5</p>
               <p>CSS/Bootstrap</p>
-              <p>JavaScript</p>
               <p>PHP</p>
               <p>MySQsL</p>
             </div>
