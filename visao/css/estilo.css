@@ -1,0 +1,70 @@
+body {
+    z-index:0;
+}
+
+section {
+    background-color: #1C1C1C;
+}
+
+.row {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.jumbotron{
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background: DarkSlateBlue;
+    color: floralwhite;
+}
+
+.cabecalho{
+    background-color: gold;
+    color: black;
+    text-align: center;
+    height: 100px;
+    padding: 10px 0px;
+}
+.cabecalho p {
+    font-size: 1.1 rem;
+}
+
+
+.row div h1{
+    padding: 25px 0px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.logo {
+    width: 70px;
+}
+
+nav div a{
+    color: white;
+    cursor: pointer;
+}
+
+nav div a:hover{
+    color: darkgrey;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: absolute;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+#sobreTexto {
+    color: white;
+    font-size: 1,5rem;
+}
+
+

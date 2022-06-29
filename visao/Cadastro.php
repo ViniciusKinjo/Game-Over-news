@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Cadastro</title>
-    <link rel="stylesheet" type="text/css" href="css/estiloCadastro.css">
+    <link rel="stylesheet" type="text/css" href="css/estiloCastrado.css">
 </head>
 <body id="container">
     <div id="cadastro">

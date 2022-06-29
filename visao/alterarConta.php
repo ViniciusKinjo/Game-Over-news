@@ -1,23 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
 <script src="script.js"></script>
-    <title>Login</title>
+    <title>Alterar Conta</title>
     <link rel="stylesheet" type="text/css" href="css/estiloCastrado.css">
 </head>
 <body id="container">
+    <?php
+        include_once("../modelo/cadastro.php");
+        session_start();
+        $id = unserialize($_SESSION['id'])->getId();
+        $nome = unserialize($_SESSION['id'])->getNome();
+        $email = unserialize($_SESSION['id'])->getEmail();
+    ?>
+
     <div>
     <div id="cadastro">
-            <h1>Recuperação de Senha</h1>  
     <form method="post" action="../controle/controle_cadastro.php">
-            <lable>Email</lable><input id="email" type="email" name="email" required><br>
-
-            <input type="submit" name="bt_recuperar" value="Recuperar Senha">
+        <label for="nome">Nome</label><input type="text" name="nome" value="<?php echo $nome ?>">
+        <label for="email">Email</label><input type="email" name="email" value="<?php echo $email ?>">
+        <input type="hidden" name="id" value="<?php echo $id ?>">
+        <input type="submit" name="bt_salvar" value="Salvar">
+        
     </form>
-    <p>Voltar para a página de <a class="linkConta" href="../visao/index.php">login</a></p>
+    <p>Voltar para a página <a class="linkConta" href="home.php">principal</a></p>
     </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

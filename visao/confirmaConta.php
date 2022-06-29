@@ -1,23 +1,26 @@
+<?php
+  require '../modelo/conexao.php';
 
+  if(isset($_SESSION['id']) && !empty($_SESSION['id'])):
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
 <script src="script.js"></script>
-    <title>Login</title>
+    <title>Confirmar conta</title>
     <link rel="stylesheet" type="text/css" href="css/estiloCastrado.css">
 </head>
 <body id="container">
     <div>
     <div id="cadastro">
-            <h1>Recuperação de Senha</h1>  
+            <h1>Confirmar email</h1>  
     <form method="post" action="../controle/controle_cadastro.php">
-            <lable>Email</lable><input id="email" type="email" name="email" required><br>
-
-            <input type="submit" name="bt_recuperar" value="Recuperar Senha">
+            <lable>Confirme o seu email!</lable><input id="email" type="email" name="email"><br>
+            <input type="submit" id="bt" name="bt_confirma" value="Confirmar">
     </form>
-    <p>Voltar para a página de <a class="linkConta" href="../visao/index.php">login</a></p>
+    <p>Voltar para a página <a class="linkConta" href="../visao/home.php">principal</a></p>
     </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -26,3 +29,6 @@
 <script src="script.js"></script>
 </body>
 </html>
+<?php
+  else: header("Location:../visao/index.php"); endif;
+?>
